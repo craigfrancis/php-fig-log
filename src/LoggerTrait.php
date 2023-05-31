@@ -15,7 +15,7 @@ trait LoggerTrait
     /**
      * System is unusable.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -31,7 +31,7 @@ trait LoggerTrait
      * Example: Entire website down, database unavailable, etc. This should
      * trigger the SMS alerts and wake you up.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -46,7 +46,7 @@ trait LoggerTrait
      *
      * Example: Application component unavailable, unexpected exception.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -60,7 +60,7 @@ trait LoggerTrait
      * Runtime errors that do not require immediate action but should typically
      * be logged and monitored.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -76,7 +76,7 @@ trait LoggerTrait
      * Example: Use of deprecated APIs, poor use of an API, undesirable things
      * that are not necessarily wrong.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -89,7 +89,7 @@ trait LoggerTrait
     /**
      * Normal but significant events.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -104,7 +104,7 @@ trait LoggerTrait
      *
      * Example: User logs in, SQL logs.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -117,7 +117,7 @@ trait LoggerTrait
     /**
      * Detailed debug information.
      *
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
@@ -131,7 +131,7 @@ trait LoggerTrait
      * Logs with an arbitrary level.
      *
      * @param mixed  $level
-     * @param string|\Stringable $message
+     * @param literal-string|\Stringable $message
      * @param array  $context
      *
      * @return void
